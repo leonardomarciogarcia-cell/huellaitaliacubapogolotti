@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pogolotti: un apellido que marcó historia en La Habana | Póster Interactivo</title>
+  <meta name="description" content="Tres generaciones de la familia Pogolotti —Dino, Marcelo y Graziella— que marcaron la historia urbana, artística e intelectual de La Habana.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ================= LIENZO DEL PÓSTER ================= -->
+  <main class="poster-container" id="posterRoot">
+
+    <div class="screenprint-grain" aria-hidden="true"></div>
+    <div class="screenprint-vignette" aria-hidden="true"></div>
+
+    <!-- CABECERA -->
+    <header class="editorial-header">
+      <div class="main-title-wrap">
+        <h1 class="main-title-line-1">Pogolotti</h1>
+        <h2 class="main-title-line-2">Un apellido que marcó historia en La Habana</h2>
+      </div>
+
+      <p class="header-subtitle">
+        Tres generaciones —un urbanista italiano, un pintor de vanguardia y una crítica de arte—
+        que escribieron la memoria de una ciudad.
+      </p>
+
+      <div class="crimson-rule"></div>
+
+      <p class="header-context">
+        De un barrio obrero en Marianao a los manifiestos futuristas de Europa:
+        la historia de la familia Pogolotti es también la historia de La Habana.
+      </p>
+      <p class="header-hint">Pulsa un año de la línea del tiempo o un retrato para conocer su historia</p>
+    </header>
+
+    <!-- EJE TEMPORAL Y BLOQUES -->
+    <div class="timeline-container">
+      <div class="timeline-rail" aria-hidden="true"></div>
+
+      <section class="timeline-content-column">
+
+        <!-- ============ BLOQUE I · DINO ============ -->
+        <article class="period-section" id="bloque-1">
+          <button type="button" class="timeline-node" title="Ver información del bloque"
+                  onclick="openPeriodModal('bloque-1')"
+                  aria-label="Ver información del Bloque I: 1898–1923">1873 /<br>1923</button>
+
+          <div class="period-meta-header">
+            <span class="period-number">BLOQUE I</span>
+            <span class="period-title">La Fundación</span>
+            <span class="period-subtitle">Dino Pogolotti · 1873–1923</span>
+          </div>
+
+          <div class="period-visual-stage">
+            <div class="screenprint-disc disc-red" aria-hidden="true"></div>
+            <div class="sculpture-composition">
+              <div class="person-item" data-person="dino"
+                   data-label="Dino Pogolotti · 1873–1923"
+                   role="button" tabindex="0"
+                   aria-label="Ver ficha de Dino Pogolotti"
+                   onclick="openPersonModal('dino')">
+                <img src="assets/img/personajes/dino.png" width="737" height="990"
+                     alt="Retrato serigráfico de Dino Pogolotti con sombrero y abrigo oscuro"
+                     class="person-img-art" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============ BLOQUE II · MARCELO ============ -->
+        <article class="period-section" id="bloque-2">
+          <button type="button" class="timeline-node" title="Ver información del bloque"
+                  onclick="openPeriodModal('bloque-2')"
+                  aria-label="Ver información del Bloque II: 1902–1988">1902 /<br>1988</button>
+
+          <div class="period-meta-header">
+            <span class="period-number">BLOQUE II</span>
+            <span class="period-title">La Vanguardia</span>
+            <span class="period-subtitle">Marcelo Pogolotti · 1902–1988</span>
+          </div>
+
+          <div class="period-visual-stage">
+            <div class="screenprint-disc disc-green" aria-hidden="true"></div>
+            <div class="sculpture-composition">
+              <div class="person-item" data-person="marcelo"
+                   data-label="Marcelo Pogolotti · 1902–1988"
+                   role="button" tabindex="0"
+                   aria-label="Ver ficha de Marcelo Pogolotti"
+                   onclick="openPersonModal('marcelo')">
+                <img src="assets/img/personajes/marcelo.png" width="1024" height="1083"
+                     alt="Retrato serigráfico de Marcelo Pogolotti, pintor, inclinado sobre su mesa de trabajo"
+                     class="person-img-art" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============ BLOQUE III · GRAZIELLA ============ -->
+        <article class="period-section" id="bloque-3">
+          <button type="button" class="timeline-node" title="Ver información del bloque"
+                  onclick="openPeriodModal('bloque-3')"
+                  aria-label="Ver información del Bloque III: 1932–">1932 /<br>—</button>
+
+          <div class="period-meta-header">
+            <span class="period-number">BLOQUE III</span>
+            <span class="period-title">La Memoria Crítica</span>
+            <span class="period-subtitle">Graziella Pogolotti · 1932–</span>
+          </div>
+
+          <div class="period-visual-stage">
+            <div class="screenprint-disc disc-red" aria-hidden="true"></div>
+            <div class="sculpture-composition">
+              <div class="person-item" data-person="graziella"
+                   data-label="Graziella Pogolotti · 1932–"
+                   role="button" tabindex="0"
+                   aria-label="Ver ficha de Graziella Pogolotti"
+                   onclick="openPersonModal('graziella')">
+                <img src="assets/img/personajes/graziella.png" width="765" height="1196"
+                     alt="Retrato serigráfico de Graziella Pogolotti con gafas oscuras"
+                     class="person-img-art" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============ BLOQUE IV · FUTURISMO ============ -->
+        <article class="period-section" id="bloque-4">
+          <button type="button" class="timeline-node" title="Ver información del bloque"
+                  onclick="openPeriodModal('bloque-4', 'node')"
+                  aria-label="Ver información del Bloque IV: Futurismo, 1909–1916">1909 /<br>1916</button>
+
+          <div class="period-meta-header">
+            <span class="period-number">BLOQUE IV</span>
+            <span class="period-title">Futurismo</span>
+            <span class="period-subtitle">El segundo futurismo italiano · Marinetti · Turín</span>
+          </div>
+
+          <div class="period-visual-stage">
+            <div class="screenprint-disc disc-cobalt" aria-hidden="true"></div>
+            <div class="sculpture-composition">
+              <div class="person-item"
+                   data-label="Futurismo · Segundo futurismo italiano"
+                   role="button" tabindex="0"
+                   aria-label="Ver información sobre el futurismo"
+                   onclick="openPeriodModal('bloque-4')">
+                <img src="assets/img/personajes/futurismo.png" width="589" height="827"
+                     alt="Cartel serigráfico futurista: un escritor de jersey rojo a rayas inclinado sobre una máquina de escribir"
+                     class="person-img-art" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </div>
+
+    <!-- PIE DE CARTEL -->
+    <footer class="poster-footer">
+      <div class="footer-tricolor" aria-hidden="true"><span></span><span></span><span></span></div>
+      <blockquote class="footer-quote">
+        «De Carrara a Marianao: un apellido, tres generaciones, una ciudad.»
+      </blockquote>
+    </footer>
+
+  </main>
+
+  <!-- ================= MODAL DE FICHA ================= -->
+  <div class="modal-overlay" id="detailModal" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" onclick="closeModal()">✕ CERRAR</button>
+      <span class="modal-year-pill" id="modalYear">PERÍODO</span>
+      <h3 class="modal-person-title" id="modalTitle">Nombre</h3>
+      <p class="modal-role" id="modalRole">Rol</p>
+
+      <div class="modal-thumb" id="modalThumbWrap" hidden>
+        <button type="button" class="modal-thumb-btn" id="modalThumbBtn"
+                onclick="openLightbox()" aria-label="Ampliar imagen" title="Ampliar imagen">
+          <img id="modalThumb" alt="">
+          <span class="modal-thumb-zoom" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="5" cy="5" r="3.6"/><path d="M7.8 7.8 11 11M5 3.4v3.2M3.4 5h3.2"/></svg>
+            Ampliar
+          </span>
+        </button>
+      </div>
+
+      <p class="modal-body-text" id="modalDescription">Descripción</p>
+
+      <p class="modal-period-notes" id="modalPeriodNotes" hidden></p>
+
+      <!-- Enlace al vídeo (solo en la vista de nodo de los bloques que definen `nodeView` en data.js) -->
+      <div class="modal-video" id="modalVideo" hidden>
+        <button type="button" class="modal-video-btn" id="modalVideoBtn" onclick="openVideoModal()">
+          <span aria-hidden="true">▶</span> <span id="modalVideoLabel">Ver vídeo</span>
+        </button>
+      </div>
+
+      <!-- Secciones de contenido extenso (solo bloques que definen `sections` en data.js) -->
+      <div class="modal-sections" id="modalSections" hidden></div>
+
+      <div class="modal-works" id="modalWorks" hidden>
+        <div class="modal-works-label">Personajes de este bloque</div>
+        <div class="modal-works-list" id="modalWorksList"></div>
+      </div>
+
+      <div class="modal-specs-grid" id="modalSpecs"></div>
+
+      <div class="modal-nav">
+        <button type="button" class="modal-nav-btn" onclick="modalStep(-1)" aria-label="Anterior">← Anterior</button>
+        <span class="modal-nav-label" id="modalNavLabel" aria-live="polite"></span>
+        <button type="button" class="modal-nav-btn" onclick="modalStep(1)" aria-label="Siguiente">Siguiente →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox-overlay" id="imageLightbox" role="dialog" aria-modal="true"
+       aria-label="Imagen ampliada" onclick="closeLightboxOnBackdrop(event)">
+    <div class="lightbox-frame">
+      <img id="lightboxImg" alt="">
+      <button type="button" class="modal-close-btn lightbox-close" id="lightboxCloseBtn"
+              onclick="closeLightbox()">✕ CERRAR</button>
+    </div>
+  </div>
+
+  <!-- ================= POPUP DE OBRA (galería de Futurismo) ================= -->
+  <div class="modal-overlay artwork-overlay" id="artworkModal" onclick="closeArtworkOnBackdrop(event)">
+    <div class="modal-card artwork-card" role="dialog" aria-modal="true" aria-labelledby="artworkTitle">
+      <button type="button" class="modal-close-btn" id="artworkCloseBtn" onclick="closeArtworkModal()">✕ CERRAR</button>
+      <span class="modal-year-pill" id="artworkPill">OBRA</span>
+      <h3 class="modal-person-title" id="artworkTitle">Título</h3>
+      <p class="modal-role" id="artworkAuthor">Autor</p>
+
+      <figure class="artwork-figure">
+        <img id="artworkImg" alt="">
+      </figure>
+
+      <div class="modal-specs-grid" id="artworkSpecs"></div>
+
+      <div class="artwork-text-label" id="artworkTextLabel">Sobre la obra</div>
+      <p class="modal-body-text artwork-text" id="artworkText"></p>
+
+      <div class="modal-nav">
+        <button type="button" class="modal-nav-btn" onclick="artworkStep(-1)" aria-label="Obra anterior">← Anterior</button>
+        <span class="modal-nav-label" id="artworkNavLabel" aria-live="polite"></span>
+        <button type="button" class="modal-nav-btn" onclick="artworkStep(1)" aria-label="Obra siguiente">Siguiente →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= POPUP DE VÍDEO ================= -->
+  <div class="modal-overlay video-overlay" id="videoModal" onclick="closeVideoOnBackdrop(event)">
+    <div class="modal-card video-card" role="dialog" aria-modal="true" aria-labelledby="videoTitle">
+      <button type="button" class="modal-close-btn" id="videoCloseBtn" onclick="closeVideoModal()">✕ CERRAR</button>
+      <span class="modal-year-pill" id="videoPill">VÍDEO</span>
+      <h3 class="modal-person-title" id="videoTitle">Vídeo</h3>
+      <div class="video-stage" id="videoStage"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

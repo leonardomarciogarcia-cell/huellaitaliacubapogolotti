@@ -1,0 +1,41 @@
+VÍDEO DE FUTURISMO
+==================
+Copia aquí el vídeo con este nombre exacto:
+
+    futurismo.mp4
+
+Eso es todo: el reproductor del nodo azul «Futurismo» (botón «Ver vídeo»)
+lo cargará automáticamente. No hay que tocar ningún código.
+
+Recomendado: MP4 con vídeo H.264 y audio AAC (se reproduce en todos los navegadores).
+Puedes borrar este archivo cuando quieras.
+
+VÍDEO «107 AÑOS DE POGOLOTTI» (nodo 1873 / 1923)
+------------------------------------------------
+Copia aquí el vídeo con este nombre exacto:
+
+    107-anos-de-pogolotti.mp4
+
+Aparecerá solo dentro del popup del nodo «1873 / 1923», y únicamente
+cuando el archivo exista y se pueda reproducir (sin archivo no se muestra nada).
+
+VÍDEOS DE MARCELO POGOLOTTI (popup de su figura)
+------------------------------------------------
+Copia aquí, con estos nombres exactos (respeta mayúsculas, espacios y comas):
+
+    Pogolotti Un Aventurero de la Modernidad.mp4
+    Marcelo Pogolotti.mp4
+    Marcelo Pogolotti, un maestro de las formas.mp4
+    Marcelo.mp4
+
+Cada uno aparece en la ficha de Marcelo solo si su archivo existe y se puede reproducir.
+
+VÍDEO DE LA VANGUARDIA (popup del nodo «1902 / 1988»)
+-----------------------------------------------------
+    vanguardia.mp4
+
+VÍDEO DE GRAZIELLA (popup del nodo «1932 / —»)
+----------------------------------------------
+    90 años de Graziella Pogolotti.mp4
+
+Aparece dentro del popup del nodo solo si el archivo existe y se puede reproducir.
